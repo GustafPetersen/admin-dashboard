@@ -1,20 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>admin-dashboard</title>
     <link rel="stylesheet" href="style.css">
- 
+
 </head>
+
 <body>
-    <div class="dashboard-pane"></div>
-    <div class="topbar"></div>
+    <div class="dashboard-pane">
+        <div class="dashboard-items" id="dashboard-top">
+            <img src="images/icons/apps.svg" alt="dashboard-icon" id="dashboard-icon">
+            <h3 id="dashboard-header">Dashboard</h3>
+        </div>
+        <div id="pane-first">
+            <div class="dashboard-items" id="home">
+                <img class="icons" src="images/icons/home.svg" alt="home-icon">
+                Home
+            </div>
+            <div class="dashboard-items" id="profile">
+                <img class="icons" src="images/icons/account-circle.svg" alt="account-icon">
+                Profile
+            </div>
+            <div class="dashboard-items" id="messages">
+                <img class="icons" src="images/icons/chat.svg" alt="messages-icon">
+                Messages
+            </div>
+            <div class="dashboard-items" id="history">
+                <img class="icons" src="images/icons/history.svg" alt="history-icon">
+                History
+            </div>
+            <div class="dashboard-items" id="tasks">
+                <img class="icons" src="images/icons/calendar-check.svg" alt="tasks-check">
+                Tasks
+            </div>
+            <div class="dashboard-items" id="communities">
+                <img class="icons" src="images/icons/google-circles-communities.svg" alt="community-icon">
+                Communities
+            </div>
+        </div>
+        <div id="pane-second">
+            <div class="dashboard-items" id="settings">
+                <img class="icons" src="images/icons/cog-outline.svg" alt="settings-icon">
+                Settings
+            </div>
+            <div class="dashboard-items" id="support">
+                <img class="icons" src="images/icons/library (support).svg" alt="support-icon">
+                Support
+            </div>
+            <div class="dashboard-items" id="privacy">
+                <img class="icons" src="images/icons/scale-balance (privacy).svg" alt="privacy-icon">
+                Privacy
+            </div>
+        </div>
+    </div>
     <div class="main-content">
-        <div class="projects"></div>
-        <div class="trend-announcements"></div>
+        <div class="topbar">
+            <div class="firstColumnFirstRowTop">
+                <img src="images/icons/magnify.svg" id="search-icon">
+                <input type="text" id="search-field">
+            </div>
+
+            <div class="secondColumnFirstRowTop">
+                <img src="images/icons/bell-outline.svg" id="notifications" />
+                <img src="images/bear.png" id="logged-user-icon" alt="image of bear avatar" />
+                <div id="logged-user">Bearclaw <br> @bearclaw</div>
+            </div>
+            <div class="firstColumnSecondRowTop">
+                <img src="images/bear.png" id="active-user-icon" alt="image of bear avatar" />
+                <div id="active-user">Bearclaw (@bearclaw)</div>
+            </div>
+
+            <div class="secondColumnSecondRowTop">
+                <button id="new">New</button>
+                <button id="upload">Upload</button>
+                <button id="share">Share</button>
+            </div>
+
+        </div>
+        <div class="projects">
+            <h3 class="projects-title">
+                Your Projects
+            </h3>
+            <div class="project-containers">
+                <h4>First project</h4>
+                <p class="body-text">
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua.
+                </p>
+                <div class="project-icons">
+                    <img src="images/icons/star.svg" alt="" class="star-icon">
+                    <img src="images/icons/check.svg" alt="" class="read-icon">
+                    <img src="images/icons/share.svg" alt="" class="share-icon">
+                </div>
+            </div>
+            <div class="project-containers">
+                <h4>Second project</h4>
+                <p class="body-text">
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua.
+                </p>
+                <div class="project-icons">
+                    <img src="images/icons/star.svg" alt="" class="star-icon">
+                    <img src="images/icons/check.svg" alt="" class="read-icon">
+                    <img src="images/icons/share.svg" alt="" class="share-icon">
+                </div>
+            </div>
+            <div class="project-containers">
+                <h4>Third project</h4>
+                <p class="body-text">
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua.
+                </p>
+                <div class="project-icons">
+                    <img src="images/icons/star.svg" alt="" class="star-icon">
+                    <img src="images/icons/check.svg" alt="" class="read-icon">
+                    <img src="images/icons/share.svg" alt="" class="share-icon">
+                </div>
+            </div>
+            <div class="project-containers">
+                <h4>Fourth project</h4>
+                <p class="body-text">
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua.
+                </p>
+                <div class="project-icons">
+                    <img src="images/icons/star.svg" alt="" class="project-icon">
+                    <img src="images/icons/check.svg" alt="" class="read-icon">
+                    <img src="images/icons/share.svg" alt="" class="share-icon">
+                </div>
+            </div>
+            <div class="project-containers">
+                <h4>Fifth project</h4>
+                <p class="body-text">
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua.
+                </p>
+                <div class="project-icons">
+                    <img src="images/icons/star.svg" alt="" class="star-icon">
+                    <img src="images/icons/check.svg" alt="" class="read-icon">
+                    <img src="images/icons/share.svg" alt="" class="share-icon">
+                </div>
+
+            </div>
+            <div class="project-containers">
+                <h4>Sixth project</h4>
+                <p class="body-text">
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua.
+                </p>
+                <div class="project-icons">
+                    <img src="images/icons/star.svg" alt="" class="star-icon">
+                    <img src="images/icons/check.svg" alt="" class="read-icon">
+                    <img src="images/icons/share.svg" alt="" class="share-icon">
+                </div>
+
+            </div>
+        </div>
+        <div class="trend-announcements">
+            <h3 class="announcements">
+                Announcements
+            </h3>
+            <div class="announcements-container">
+                <div class="1-announcement">
+                    <h5 class="announcement-title">Release Party</h5>
+                    <p class="announcement-body">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <div class="break-line"></div>
+                <div class="2-announcement">
+                    <h5 class="announcement-title">Team win</h5>
+                    <p class="announcement-body">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+                <div class="break-line"></div>
+                <div class="3-announcement">
+                    <h5 class="announcement-title">Site maintenance</h5>
+                    <p class="announcement-body">
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+            <h3 class="trending">
+                Trending
+            </h3>
+            <div class="trending-container">
+                <div class="trending-user user-one">
+                    <img src="images/bear.png" alt="" class="user-avatar">
+                    <!--Bear icon-->
+                    <h6 class="username-trending">
+                        Bearclaw
+                    </h6>
+                    <p class="user-tag">@bearclaw</p>
+                </div>
+                <div class="trending-user user-two">
+                    <img src="images/circus-monkey.png" alt="" class="user-avatar">
+                    <!--Monkey Icon-->
+                    <h6 class="username-trending">
+                        Monkimagix
+                    </h6 class="username-trending">
+                    <p class="user-tag">@monkimagix</p>
+                </div>
+                <div class="trending-user user-three">
+                    <img src="images/giraffe.png" alt="" class="user-avatar">
+                    <!--Giraffe Icon-->
+                    <h6 class="username-trending">
+                        Longneck
+                    </h6>
+                    <p class="user-tag">@longneck</p>
+                </div>
+                <div class="trending-user user-four">
+                    <img src="images/racoon.png" alt="" class="user-avatar">
+                    <!--Racoon icon-->
+                    <h6 class="username-trending">
+                        Raconrocket
+                    </h6>
+                    <p class="user-tag">@raconrocket</p>
+                </div>
+                <div class="trending-user user-five">
+                    <img src="images/lion.png" alt="" class="user-avatar">
+                    <!--Lion Icon-->
+                    <h6 class="username-trending">
+                        Lion's Mane
+                    </h6>
+                    <p class="user-tag">@lionsmane</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://www.flaticon.com/free-icons/bear" id="icons-disclaimer">Bear, Zoo, Giraffe, Racoon and Lion icons
+            created by Freepik - Flaticon</a>
     </div>
 </body>
 <script src="/scripts/main.js"></script>
+
 </html>

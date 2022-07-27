@@ -1,0 +1,328 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('fonts/Raleway.ttf');
+}
+
+:root {
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+body {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 5fr);
+    grid-template-rows: minmax(0, 4fr) minmax(0, 4fr);
+    margin: 0;
+    padding: 0;
+    background-color: #F0FDFA;
+    color: #134E4A;
+}
+.dashboard-pane {
+    /*width: 15%;
+    height: 100%;*/
+    max-height: 100vh;
+    background-color: #134e4a;
+    color: #CCFBF1;
+    display: grid;
+    grid-template: minmax(0, 2fr) minmax(0, 6fr) minmax(0, 3fr) / minmax(0, 1fr);
+    grid-area: 1 / 1 / 6 / 1;
+}
+
+#pane-first {
+    display: inline-grid;
+    grid-template: repeat(6, minmax(0, 1fr)) / minmax(0, 1fr);
+    margin: 1.25%;
+    padding: 1.25%;
+    align-content: top;
+}
+#pane-second {
+    display: inline-grid;
+    margin: 1.25%;
+    padding: 1.25%;
+    grid-template: repeat(3, minmax(0, 1fr)) / minmax(0, 1fr);
+    align-content: bottom;
+}
+
+.main-content {
+    min-width: 0px;
+    min-height: 0px;
+    max-height: 100vh;
+    display: inline-grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 2fr);
+    grid-template-rows: minmax(0, 1fr) minmax(0, 4fr);
+    grid-area: 1 / 2 / 6 / 6;
+    box-shadow: 0px 0px 15px inset #134E4A;
+    background-color: #CCFBF1;
+    overflow: hidden;
+}
+
+ .topbar {
+    display: grid;
+    grid-template: minmax(0, 2fr) minmax(0, 2fr) / minmax(0, 8fr) minmax(0, 2fr);
+    grid-area: 1 / 1 / 1 / 3; 
+    background-color: #F0FDFA;
+    box-shadow: 2px 1px 5px #134E4A;
+    border: none;
+}
+
+#active-user-icon {
+    width: 45%;
+    height: auto;
+    align-self: center;
+    justify-self: right;    
+}
+
+#active-user {
+    margin-left: 2%;
+    width: 15%;
+    height: 20%;
+    align-self: center;
+    justify-self: left;
+    white-space: nowrap;
+}
+
+
+.firstColumnFirstRowTop {
+    display: grid;
+    grid-template: minmax(0, 1fr) / minmax(0, 1fr) minmax(0, 6fr);
+}
+
+#search-icon {
+    width: 25%;
+    height: auto;
+    justify-self: end;
+    align-self: center;
+}
+#search-icon:hover {
+    transform: scale(1.25)
+}
+
+#search-field {
+    width: 80%;
+    height: 35%;
+    align-self: center;
+    justify-self: left;
+    border: solid 1.5px #2DD4BF;
+    border-radius: 25px;
+    box-shadow: 1px 1px 2.5px #2DD4BF;
+    padding-left: 2.5%;
+}
+
+.secondColumnFirstRowTop {
+    display: grid;
+    grid-template: minmax(0, 1fr) / repeat(3, minmax(0, 1fr));
+}
+
+#notifications {
+    width: 35%;
+    height: auto;
+    align-self: center;
+    justify-self: right;
+}
+#notifications:hover {
+    transform: scale(1.25);
+
+}
+
+
+#logged-user-icon {
+    width: 70%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+}
+
+#logged-user {
+    font-size: 0.8em;
+    width: 60%;
+    height: auto;
+    align-self: center;
+    justify-self: left;
+}
+
+.firstColumnSecondRowTop {
+    display: grid;
+    grid-template: minmax(0, 1fr) / minmax(0, 1fr)  minmax(0, 5fr);
+}
+
+.secondColumnSecondRowTop {
+    display: grid;
+    grid-template: minmax(0, 1fr) / repeat(3, minmax(0, 1fr));
+}
+
+button {
+    width: 80%;
+    height: 40%;
+    margin: 5px 10px 5px 10px;
+    padding: 5px 10px 5px 10px;
+    border: solid 0.5px #A7F3D0;
+    border-radius: 10.5px;
+    box-shadow: -1px -1px 2px inset;
+    background-color: #D1FAE5;
+    color: #134E4A;
+    align-self: center;
+    justify-self: center;
+}
+
+button:hover {
+    border: none;
+    box-shadow: 2px 2px 5px;
+    background: linear-gradient(45deg, #D1FAE5, #A7F3D0 70%);
+}
+
+.dashboard-items {
+    margin: 1.25%;
+    padding: 1.25%;
+    display: grid;
+    grid-template: minmax(0, 1fr) / minmax(0, 1fr) minmax(0, 5fr);
+    font-size: 0.9rem;
+}
+.dashboard-items:hover {
+    text-shadow: black 2px -2px 5px;
+}
+
+#dashboard-top {
+    grid-template: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr) / 2.5% minmax(0, 1fr) minmax(0, 2fr) 2.5%;
+}
+
+#dashboard-header {
+    font-size: 1.75em;
+    grid-area: 2 / 3 / 2 / 3;
+    align-self: center;
+    justify-self: left;
+}
+
+#dashboard-icon {
+    align-self: center;
+    width: 75%;
+    grid-area: 2 / 2 / 2 / 2;
+}
+
+.projects {
+    display: inline-grid;
+    margin: 2%;
+    padding: 2%;
+    grid-template: minmax(0, 1fr) repeat(2, minmax(0, 3fr)) / repeat(3, minmax(0, 1fr));
+    grid-gap: 5px;
+}
+
+.projects-title {
+    grid-area: 1 / 1 / 1 / 4;
+}
+
+.project-containers {
+    display: inline-grid;
+    width: 92.5%;
+    height: 75%;
+    margin: 2%;
+    padding: 1.25%;
+    font-size: 0.65em;
+    border: 0.0625px solid #134e4a10;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px #134E4A;
+}
+.project-containers:hover {
+    border: 1px solid #F0FDFA;
+    box-shadow: 2px 2px 5px #134E4A inset;
+}
+
+.project-icons {
+    align-self: end;
+    justify-self: end;
+} 
+
+.announcements {
+    align-self: center;
+    justify-self: left;
+}
+
+.trend-announcements {
+    gap: 0;
+    display: inline-grid;
+    grid-template: repeat(2, minmax(0, 1fr) minmax(0, 10fr)) / minmax(0, 1fr);
+    margin: 2%;
+    padding: 2%;
+}
+
+.announcements-container {
+    gap: 0;
+    display: inline-grid;
+    grid-template: minmax(0, 1fr) minmax(0, 2%) minmax(0, 1fr) minmax(0, 2%) minmax(0, 1fr) / minmax(0, 1fr);
+    margin: 2%;
+    padding: 2%;
+    font-size: 0.65em;
+    border: 0.0625px solid #134e4a10;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px #134E4A;
+}
+
+.break-line {
+    width: 75%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #A7F3D0, #134E4A, #A7F3D0);
+    align-self: center;
+    justify-self: center;
+}
+
+.announcement-title {
+    align-self: start;
+    justify-self: left;
+}
+
+.announcement-body {
+    font-size: 0.85em;
+}
+
+.trending-container {
+    gap: 0;
+    display: inline-grid;
+    grid-template: repeat(5, minmax(0, 1fr))/ minmax(0, 1fr);
+    margin: 2%;
+    padding: 2%;
+    font-size: 0.75em;
+    border: 0.0625px solid #134e4a10;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px #134E4A;
+}
+
+.trending {
+    align-self: center;
+    justify-self: left;
+}
+
+.user-avatar {
+    min-width: 5px;
+    max-width: 45px;
+    height: auto;
+}
+
+.trending-user {
+    display: grid;
+    grid-template: repeat(2, minmax(0, 1fr)) / minmax(0, 1fr) minmax(0, 3fr);
+    align-items: center;
+    justify-items: left;
+}
+.user-avatar {
+    justify-self: right;
+    margin: 2%;
+    padding: 1.5%;
+    grid-area: 1 / 1 / 3 / 1;
+}
+
+#icons-disclaimer{
+    position: absolute;
+    bottom: 0;
+    right: 2.5%;
+    font-size: 0.55rem;
+    align-self: left;
+}
+.username-trending {
+    align-self: center;
+}
+
+.user-tag {
+    font-size: 0.5em;
+    align-self: top;
+}
